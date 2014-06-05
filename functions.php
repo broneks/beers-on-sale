@@ -1,4 +1,5 @@
 <?php
+
     // retrieves and return a specified web page
     function download_page($path){
         $ch = curl_init();
@@ -11,4 +12,5 @@
         curl_close($ch);
         return $retValue;
 	}
+
 ?>

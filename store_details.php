@@ -1,6 +1,8 @@
 <?php 
+
     include 'controllers/store_details_controller.php';
     include 'sections/head.php';
+
 ?>
 
 <!-- Store Details Page -->
@@ -63,6 +65,5 @@
         </table>
     </div>
 </div>
-
 
 <?php include 'sections/footer.php' ?>

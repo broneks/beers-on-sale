@@ -1,6 +1,8 @@
 <?php 
+
     include 'controllers/index_controller.php';
     include 'sections/head.php';
+
 ?>
 
 <!-- Home Page -->

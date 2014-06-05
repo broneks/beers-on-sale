@@ -1,6 +1,8 @@
 <?php 
+
     include 'controllers/stores_controller.php';
     include 'sections/head.php';
+
 ?>
 
 <!-- Stores Page -->

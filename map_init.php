@@ -1,7 +1,13 @@
 <script>
+
+    // bind initialize to page load event
     $("div:jqmData(role='page'):last").bind('pageshow', initialize);
+
     // create map variable
     var map;
+
+    // create LatLng object
+    var storeCoords = new google.maps.LatLng(<?php echo $store->latitude ?>, <?php echo $store->longitude ?>);
 
     // initializes map
     function initialize() {
@@ -9,14 +15,12 @@
         // configure map
         var mapOptions = {
             zoom: 13,
-            center: new google.maps.LatLng(<?php echo $store->latitude ?>, <?php echo $store->longitude ?>),
+            center: storeCoords,
             disableDefaultUI: true
         };
 
         // associate variable with html element
         map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-				
-        storeCoords = new google.maps.LatLng(<?php echo $store->latitude ?>, <?php echo $store->longitude ?>);
 
         // create marker
         marker = new google.maps.Marker({
@@ -26,12 +30,5 @@
         });
 
     }
-	
-
-    google.maps.event.addDomListener(
-        window, 
-        'load',
-        initialize
-    );
 
 </script>
