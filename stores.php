@@ -10,7 +10,7 @@
 
     <!-- Header -->
     <div data-role="header">
-        <h1><?php echo $product->name ?></h1>
+        <h1><?php echo $product->size ?></h1>
     </div>
     
     <!-- Content -->
