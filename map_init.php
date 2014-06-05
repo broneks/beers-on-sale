@@ -14,7 +14,7 @@
 
         // configure map
         var mapOptions = {
-            zoom: 13,
+            zoom: 15,
             center: storeCoords,
             disableDefaultUI: true
         };
