@@ -4,6 +4,7 @@
     include 'sections/head.php';
 
 ?>
+
 <!-- Beer Detail Page -->
 <div data-role="page" id="beer-details">
 

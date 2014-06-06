@@ -1,7 +1,8 @@
 <?php
 
     // retrieves and return a specified web page
-    function download_page($path){
+    function download_page($path) {
+
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL,$path);
         curl_setopt($ch, CURLOPT_FAILONERROR,1);
@@ -11,6 +12,6 @@
         $retValue = curl_exec($ch);			 
         curl_close($ch);
         return $retValue;
-	}
+    }
 
 ?>
