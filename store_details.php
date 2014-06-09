@@ -14,6 +14,8 @@
     <!-- Header -->
     <div data-role="header">
         <h1><?php echo $store->name ?></h1>
+
+        <a href="stores.php?product_id=<?php echo $_GET['product_id'] ?>">Back to Stores</a>
     </div>
 
     <!-- Content -->

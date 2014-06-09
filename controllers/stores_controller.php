@@ -12,6 +12,4 @@
 
     // get store object array
     $stores_json = download_page(API_URL . "/products/$product_id/stores");
-    $stores = json_decode($stores_json)
-    
-?>
+    $stores = json_decode($stores_json);

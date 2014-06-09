@@ -11,6 +11,8 @@
     <!-- Header -->
     <div data-role="header">
         <h1><?php echo $beer->name ?></h1>
+
+        <a href="index.php">Back to Home</a>
     </div>
 
     <!-- Content -->

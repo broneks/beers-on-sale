@@ -9,5 +9,3 @@
     // get store object by id
     $store_json = download_page(API_URL . "/stores/$store_id");
     $store = json_decode($store_json);
-
-?>

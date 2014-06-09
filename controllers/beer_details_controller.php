@@ -13,5 +13,3 @@
     // get on sale product object array
     $products_json = download_page(API_URL . "/beers/$beer_id/products?on_sale=true");
     $products = json_decode($products_json);
-    
-?>

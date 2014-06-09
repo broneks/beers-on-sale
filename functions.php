@@ -12,5 +12,3 @@
         curl_close($ch);
         return $retValue;
     }
-
-?>
